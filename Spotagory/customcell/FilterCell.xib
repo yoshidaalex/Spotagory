@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Brandon_reg.otf">
+            <string>BrandonGrotesque-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="filterCell" id="gTV-IL-0wX" customClass="FilterCell" customModule="Spotagory" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="142"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="600" height="142"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hsD-ko-94p">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="142"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo_sample1" translatesAutoresizingMaskIntoConstraints="NO" id="Id1-KW-gFb">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="142"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FOOD &amp; DRINKS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bDF-J1-CFK">
+                                <rect key="frame" x="250" y="58" width="100" height="27"/>
+                                <color key="backgroundColor" red="0.96078431369999995" green="0.65098039220000004" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="tG1-zx-EQu"/>
+                                    <constraint firstAttribute="height" constant="27" id="w6l-qE-3Qg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BrandonGrotesque-Regular" family="Brandon Grotesque" pointSize="10"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ip5-xp-Fun">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="142"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Id1-KW-gFb" firstAttribute="top" secondItem="hsD-ko-94p" secondAttribute="top" id="5Iv-ra-7hj"/>
+                            <constraint firstItem="bDF-J1-CFK" firstAttribute="centerX" secondItem="hsD-ko-94p" secondAttribute="centerX" id="DJ8-zV-dGI"/>
+                            <constraint firstAttribute="trailing" secondItem="Id1-KW-gFb" secondAttribute="trailing" id="KDK-UJ-Z0u"/>
+                            <constraint firstItem="Id1-KW-gFb" firstAttribute="leading" secondItem="hsD-ko-94p" secondAttribute="leading" id="M66-Tg-SFE"/>
+                            <constraint firstAttribute="trailing" secondItem="ip5-xp-Fun" secondAttribute="trailing" id="NeO-5M-7q7"/>
+                            <constraint firstItem="bDF-J1-CFK" firstAttribute="centerY" secondItem="hsD-ko-94p" secondAttribute="centerY" id="cZa-dE-cdo"/>
+                            <constraint firstAttribute="bottom" secondItem="Id1-KW-gFb" secondAttribute="bottom" id="fmp-h6-m1G"/>
+                            <constraint firstItem="ip5-xp-Fun" firstAttribute="top" secondItem="hsD-ko-94p" secondAttribute="top" id="kLh-mZ-M4x"/>
+                            <constraint firstItem="ip5-xp-Fun" firstAttribute="leading" secondItem="hsD-ko-94p" secondAttribute="leading" id="o6c-5a-9Rz"/>
+                            <constraint firstAttribute="bottom" secondItem="ip5-xp-Fun" secondAttribute="bottom" id="xcb-N8-Jy3"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="hsD-ko-94p" secondAttribute="bottom" id="SKG-4x-vsS"/>
+                <constraint firstItem="hsD-ko-94p" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Z7W-Zf-U1n"/>
+                <constraint firstAttribute="trailing" secondItem="hsD-ko-94p" secondAttribute="trailing" id="lmM-uv-SRQ"/>
+                <constraint firstItem="hsD-ko-94p" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="zOM-x9-oMG"/>
+            </constraints>
+            <size key="customSize" width="600" height="85"/>
+            <connections>
+                <outlet property="btnSelect" destination="ip5-xp-Fun" id="keC-Lh-qG4"/>
+                <outlet property="img_background" destination="Id1-KW-gFb" id="v1c-za-QKn"/>
+                <outlet property="lblCategoryTitle" destination="bDF-J1-CFK" id="7Fy-fT-8i0"/>
+            </connections>
+            <point key="canvasLocation" x="461" y="333"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="photo_sample1" width="245" height="216"/>
+    </resources>
+</document>
